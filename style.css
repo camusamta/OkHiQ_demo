@@ -8,9 +8,37 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: column;
 
 
 
+}
+
+header {
+
+position: absolute;
+top: 4%;
+left: 0%;
+/* width: 25%; */
+padding: 1em 1.2em;
+box-sizing: border-box;
+height: 7%;
+background-color: #0066B9;
+box-shadow: 0px 4px 10px #00000029;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.3rem;
+font-weight: 700;
+font-family: sans-serif;
+color: #fff;
+border-radius: 0 4px 4px 0;
+
+}
+
+.fa-home-alt {
+
+  margin: 0 8% 4% 0;
 }
 
 main {
@@ -22,18 +50,40 @@ main {
   box-shadow: 0px 8px 10px #00000029;
   border-radius: 4px;
   margin-bottom: 32px;
-  /* transform: rotate(-1.2deg); */
+  transform: rotate(-1.2deg);
   padding: 8px 8px 16px 8px;
   box-sizing: border-box;
 }
 
 #sticky {
 
-  height: 10%;
+  box-sizing: border-box;
+  height: 40%;
+  z-index: -1;
   width: 100%;
   background-color: #0066B9;
+  padding: 0 4% 10% 5%;
+  /* background-color: #353535; */
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-end;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  /* box-shadow: 18px 5px 10px #00000067; */
+}
+
+.fa-thumbs-down {
+
+  transform: scaleX(-1);
+}
+
+.fa-thumbs-down, .fa-thumbs-up {
+
+  color: #BFD9EF;
 }
 
 #photo-container {
